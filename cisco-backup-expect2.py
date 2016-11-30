@@ -48,7 +48,7 @@ if __name__ == '__main__':
         fp=open(filename,"w")
 
         print 'This program is being run by itself'
-        Switch = CiscoSwitch('172.22.24.249','wttadmin','col123col')
+        Switch = CiscoSwitch('172.22.24.249','cisco','password')
         (obj,stdout) = Switch.Login()
         print stdout
         fp.write(stdout)
